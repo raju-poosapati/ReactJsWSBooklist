@@ -1,13 +1,17 @@
-import React from 'react'
-import {useDispatch,useSelector} from 'react-redux'
+import React from "react";
+import { useSelector } from "react-redux";
 const List = () => {
-    const booksList=useSelector((state)=>state.bookstore.books)
-    return (
-        <div>
-            <h3>Books List</h3>
-            {booksList.map(item=><li key={item.id}>{item.Name}</li>)}
-        </div>
-    )
-}
+  const booksList = useSelector((state) => state.bookstore.books);
+  return (
+    <div>
+      <h3>Books List</h3>
+      <ul>
+        {booksList.map((item) => (
+          <li key={item.id}>{item.Name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-export default List
+export default List;

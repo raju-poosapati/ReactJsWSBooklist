@@ -1,12 +1,11 @@
-import './App.css';
-import Additem from './Components/Additem'
-import List from './Components/List'
+import "./App.css";
+import AddItem from "./Components/Additem";
+import List from "./Components/List";
 function App() {
   return (
     <div className="App">
-      <Additem/>
-      <hr/>
-      <List/>
+      <AddItem />
+      <List />
     </div>
   );
 }
